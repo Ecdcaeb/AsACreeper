@@ -1,4 +1,4 @@
-package com.Hileb.as_a_creeper_hileb.core;
+package com.Hileb.as_a_creeper_hileb.handler;
 
 import com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom;
 import net.minecraft.client.entity.AbstractClientPlayer;
