@@ -1,0 +1,9 @@
+{
+  "package": "com.Hileb.as_a_creeper_hileb.client",
+  "required": true,
+  "mixins": [],
+  "client": ["ExtraRenderPlayer"],
+  "minVersion": 0.8,
+  "compatibilityLevel": "JAVA_8",
+  "server": []
+}
