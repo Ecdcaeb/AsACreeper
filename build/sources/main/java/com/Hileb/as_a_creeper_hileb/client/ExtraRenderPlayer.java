@@ -1,12 +1,14 @@
 package com.Hileb.as_a_creeper_hileb.client;
 
-import com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic;
+import com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic;
 import net.minecraft.client.entity.AbstractClientPlayer;
-import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLivingBase;
-import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.RenderPlayer;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 /**
  * @Project AsACreeper
@@ -16,18 +18,19 @@ import org.spongepowered.asm.mixin.Mixin;
  **/
 /**{@link net.minecraft.client.renderer.entity.RenderCreeper#}**/
 @Mixin(RenderPlayer.class)
-public abstract class ExtraRenderPlayer extends RenderLivingBase<AbstractClientPlayer>{
-    public ExtraRenderPlayer(RenderManager renderManagerIn, ModelBase modelBaseIn, float shadowSizeIn) {
-        super(renderManagerIn, modelBaseIn, shadowSizeIn);
-    }
+public abstract class ExtraRenderPlayer{
 
-    @Override
-    public int getColorMultiplier(AbstractClientPlayer entitylivingbaseIn, float lightBrightness, float partialTickTime)
+    @Inject(method = "getColorMultiplier",at = @At("HEAD"),cancellable = true)
+    public void onGetColorMultiplier(AbstractClientPlayer entitylivingbaseIn, float lightBrightness, float partialTickTime, CallbackInfoReturnable<Integer> call)
     {
-        return ExtraRenderPlayerStatic.getColorMultiplier(entitylivingbaseIn,lightBrightness,partialTickTime);
+        int a= ExtraRenderPlayerStatic.getColorMultiplier(entitylivingbaseIn,lightBrightness,partialTickTime);
+        if (a!=0){
+            call.setReturnValue(a);
+        }
     }
 
-    public void preRenderCallback(AbstractClientPlayer entitylivingbaseIn, float partialTickTime)
+    @Inject(method = "preRenderCallback(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V",at =  @At("HEAD"))
+    public void preRenderCallback(AbstractClientPlayer entitylivingbaseIn, float partialTickTime, CallbackInfo ci)
     {
         ExtraRenderPlayerStatic.preRenderCallback((RenderPlayer)(Object)this,entitylivingbaseIn,partialTickTime);
     }

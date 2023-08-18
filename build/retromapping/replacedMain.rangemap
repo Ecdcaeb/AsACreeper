@@ -28,50 +28,52 @@ Class Start: com.Hileb.as_a_creeper_hileb.AACHModMain
 Class End  : com.Hileb.as_a_creeper_hileb.AACHModMain
 endProcessing "com/Hileb/as_a_creeper_hileb/AACHModMain.java"
 
-startProcessing "com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java" md5: e5f1e4c7cccf835b0c234fffdd6c2b83
+startProcessing "com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java" md5: ef6abeeac0de69ae848a7c6dbac17999
 @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|8|43|com.Hileb.as_a_creeper_hileb.client|package|com.Hileb.as_a_creeper_hileb.client|(file)
 Class Start: com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer
-   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|597|602|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
-   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|603|615|RenderPlayer|class|net.minecraft.client.renderer.entity.RenderPlayer|false
-   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|646|663|ExtraRenderPlayer|class|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|false
-   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|672|688|RenderLivingBase|class|net.minecraft.client.renderer.entity.RenderLivingBase|false
-   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|689|709|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
-   Method Start: ExtraRenderPlayer(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|756|771|renderManagerIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V|renderManagerIn|0
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|783|794|modelBaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V|modelBaseIn|1
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|802|814|shadowSizeIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V|shadowSizeIn|2
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|724|741|ExtraRenderPlayer|method|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|742|755|RenderManager|class|net.minecraft.client.renderer.entity.RenderManager|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|773|782|ModelBase|class|net.minecraft.client.model.ModelBase|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|833|848|renderManagerIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V|renderManagerIn|0
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|850|861|modelBaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V|modelBaseIn|1
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|863|875|shadowSizeIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|ExtraRenderPlayer|(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V|shadowSizeIn|2
-   Method End: ExtraRenderPlayer(Lnet/minecraft/client/renderer/entity/RenderManager;Lnet/minecraft/client/model/ModelBase;F)V
-   Method Start: getColorMultiplier(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|958|976|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|984|999|lightBrightness|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|lightBrightness|1
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1007|1022|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|partialTickTime|2
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|893|901|Override|class|java.lang.Override|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|918|936|getColorMultiplier|method|net.minecraft.client.renderer.entity.RenderLivingBase|getColorMultiplier|(Lnet/minecraft/entity/EntityLivingBase;FF)I
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|937|957|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1047|1070|ExtraRenderPlayerStatic|class|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1071|1089|getColorMultiplier|method|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1090|1108|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1109|1124|lightBrightness|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|lightBrightness|1
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1125|1140|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|partialTickTime|2
-   Method End: getColorMultiplier(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
-   Method Start: preRenderCallback(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1208|1226|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1234|1249|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|partialTickTime|1
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1169|1186|preRenderCallback|method|net.minecraft.client.renderer.entity.RenderLivingBase|preRenderCallback|(Lnet/minecraft/entity/EntityLivingBase;F)V
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1187|1207|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1267|1290|ExtraRenderPlayerStatic|class|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1291|1308|preRenderCallback|method|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1310|1322|RenderPlayer|class|net.minecraft.client.renderer.entity.RenderPlayer|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1324|1330|Object|class|java.lang.Object|false
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1336|1354|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1355|1370|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|partialTickTime|1
-   Method End: preRenderCallback(Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
+   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|746|751|Mixin|class|org.spongepowered.asm.mixin.Mixin|false
+   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|752|764|RenderPlayer|class|net.minecraft.client.renderer.entity.RenderPlayer|false
+   @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|795|812|ExtraRenderPlayer|class|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|false
+   Method Start: onGetColorMultiplier(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|955|973|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|981|996|lightBrightness|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|lightBrightness|1
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1004|1019|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|partialTickTime|2
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1053|1057|call|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|call|3
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|822|828|Inject|class|org.spongepowered.asm.mixin.injection.Inject|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|829|835|method|method|org.spongepowered.asm.mixin.injection.Inject|method|()[Ljava/lang/String;
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|859|861|at|method|org.spongepowered.asm.mixin.injection.Inject|at|()[Lorg/spongepowered/asm/mixin/injection/At;
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|865|867|At|class|org.spongepowered.asm.mixin.injection.At|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|876|887|cancellable|method|org.spongepowered.asm.mixin.injection.Inject|cancellable|()Z
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|913|933|onGetColorMultiplier|method|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|934|954|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1021|1043|CallbackInfoReturnable|class|org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1044|1051|Integer|class|java.lang.Integer|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1082|1105|ExtraRenderPlayerStatic|class|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1106|1124|getColorMultiplier|method|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1125|1143|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1144|1159|lightBrightness|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|lightBrightness|1
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1160|1175|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|partialTickTime|2
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1211|1215|call|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|onGetColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V|call|3
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1216|1230|setReturnValue|method|org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable|setReturnValue|(Ljava/lang/Object;)V
+   Method End: onGetColorMultiplier(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V
+   Method Start: preRenderCallback(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1426|1444|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1452|1467|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partialTickTime|1
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1482|1484|ci|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|ci|2
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1261|1267|Inject|class|org.spongepowered.asm.mixin.injection.Inject|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1268|1274|method|method|org.spongepowered.asm.mixin.injection.Inject|method|()[Ljava/lang/String;
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1351|1353|at|method|org.spongepowered.asm.mixin.injection.Inject|at|()[Lorg/spongepowered/asm/mixin/injection/At;
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1358|1360|At|class|org.spongepowered.asm.mixin.injection.At|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1387|1404|preRenderCallback|method|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1405|1425|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1469|1481|CallbackInfo|class|org.spongepowered.asm.mixin.injection.callback.CallbackInfo|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1502|1525|ExtraRenderPlayerStatic|class|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1526|1543|preRenderCallback|method|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1545|1557|RenderPlayer|class|net.minecraft.client.renderer.entity.RenderPlayer|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1559|1565|Object|class|java.lang.Object|false
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1571|1589|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java|1590|1605|partialTickTime|param|com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer|preRenderCallback|(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V|partialTickTime|1
+   Method End: preRenderCallback(Lnet/minecraft/client/entity/AbstractClientPlayer;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V
 Class End  : com.Hileb.as_a_creeper_hileb.client.ExtraRenderPlayer
 endProcessing "com/Hileb/as_a_creeper_hileb/client/ExtraRenderPlayer.java"
 
@@ -128,55 +130,55 @@ Class Start: com.Hileb.as_a_creeper_hileb.core.AACHMixinCore
 Class End  : com.Hileb.as_a_creeper_hileb.core.AACHMixinCore
 endProcessing "com/Hileb/as_a_creeper_hileb/core/AACHMixinCore.java"
 
-startProcessing "com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java" md5: 350fb26a801d0f73eb91121d979648f5
-@|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|8|41|com.Hileb.as_a_creeper_hileb.core|package|com.Hileb.as_a_creeper_hileb.core|(file)
-Class Start: com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic
-   @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|412|435|ExtraRenderPlayerStatic|class|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|false
+startProcessing "com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java" md5: 4ca3c2232d3bbf9be9025026de7438bd
+@|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|8|44|com.Hileb.as_a_creeper_hileb.handler|package|com.Hileb.as_a_creeper_hileb.handler|(file)
+Class Start: com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic
+   @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|415|438|ExtraRenderPlayerStatic|class|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|false
    Method Start: getColorMultiplier(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|503|521|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|529|544|lightBrightness|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|lightBrightness|1
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|552|567|partialTickTime|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|partialTickTime|2
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|463|481|getColorMultiplier|method|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|482|502|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|607|620|ItemSkullBoom|class|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|621|638|isPlayerUsingItem|method|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|isPlayerUsingItem|(Lnet/minecraft/entity/player/EntityPlayer;)Z
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|639|657|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|684|702|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|703|720|getItemInUseCount|method|net.minecraft.entity.EntityLivingBase|getItemInUseCount|()I
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|723|738|partialTickTime|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|partialTickTime|2
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|947|957|MathHelper|class|net.minecraft.util.math.MathHelper|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|958|963|clamp|method|net.minecraft.util.math.MathHelper|clamp|(III)I
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|506|524|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|532|547|lightBrightness|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|lightBrightness|1
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|555|570|partialTickTime|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|partialTickTime|2
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|466|484|getColorMultiplier|method|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|485|505|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|610|623|ItemSkullBoom|class|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|624|641|isPlayerUsingItem|method|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|isPlayerUsingItem|(Lnet/minecraft/entity/player/EntityPlayer;)Z
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|642|660|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|687|705|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|entitylivingbaseIn|0
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|706|723|getItemInUseCount|method|net.minecraft.entity.EntityLivingBase|getItemInUseCount|()I
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|726|741|partialTickTime|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|getColorMultiplier|(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I|partialTickTime|2
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|950|960|MathHelper|class|net.minecraft.util.math.MathHelper|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|961|966|clamp|method|net.minecraft.util.math.MathHelper|clamp|(III)I
    Method End: getColorMultiplier(Lnet/minecraft/client/entity/AbstractClientPlayer;FF)I
    Method Start: preRenderCallback(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1124|1136|renderPlayer|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|renderPlayer|0
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1158|1176|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1184|1199|partialTickTime|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|partialTickTime|2
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1093|1110|preRenderCallback|method|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1111|1123|RenderPlayer|class|net.minecraft.client.renderer.entity.RenderPlayer|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1137|1157|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1217|1231|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1232|1237|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1279|1292|ItemSkullBoom|class|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1293|1310|isPlayerUsingItem|method|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|isPlayerUsingItem|(Lnet/minecraft/entity/player/EntityPlayer;)Z
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1311|1329|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1355|1368|ItemSkullBoom|class|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1369|1392|getPlayerFlashIntensity|method|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|getPlayerFlashIntensity|(Lnet/minecraft/entity/player/EntityPlayer;F)F
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1393|1411|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1412|1427|partialTickTime|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|partialTickTime|2
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1461|1471|MathHelper|class|net.minecraft.util.math.MathHelper|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1472|1475|sin|method|net.minecraft.util.math.MathHelper|sin|(F)F
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1509|1519|MathHelper|class|net.minecraft.util.math.MathHelper|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1520|1525|clamp|method|net.minecraft.util.math.MathHelper|clamp|(FFF)F
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1699|1713|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1714|1719|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1750|1768|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1769|1774|world|field|net.minecraft.entity.Entity|world
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1775|1792|getTotalWorldTime|method|net.minecraft.world.World|getTotalWorldTime|()J
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1819|1833|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
-      @|com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java|1834|1839|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFF)V
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1127|1139|renderPlayer|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|renderPlayer|0
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1161|1179|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1187|1202|partialTickTime|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|partialTickTime|2
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1096|1113|preRenderCallback|method|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1114|1126|RenderPlayer|class|net.minecraft.client.renderer.entity.RenderPlayer|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1140|1160|AbstractClientPlayer|class|net.minecraft.client.entity.AbstractClientPlayer|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1220|1234|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1235|1240|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1282|1295|ItemSkullBoom|class|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1296|1313|isPlayerUsingItem|method|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|isPlayerUsingItem|(Lnet/minecraft/entity/player/EntityPlayer;)Z
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1314|1332|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1358|1371|ItemSkullBoom|class|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1372|1395|getPlayerFlashIntensity|method|com.Hileb.as_a_creeper_hileb.item.ItemSkullBoom|getPlayerFlashIntensity|(Lnet/minecraft/entity/player/EntityPlayer;F)F
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1396|1414|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1415|1430|partialTickTime|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|partialTickTime|2
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1464|1474|MathHelper|class|net.minecraft.util.math.MathHelper|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1475|1478|sin|method|net.minecraft.util.math.MathHelper|sin|(F)F
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1512|1522|MathHelper|class|net.minecraft.util.math.MathHelper|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1523|1528|clamp|method|net.minecraft.util.math.MathHelper|clamp|(FFF)F
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1702|1716|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1717|1722|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1753|1771|entitylivingbaseIn|param|com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic|preRenderCallback|(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V|entitylivingbaseIn|1
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1772|1777|world|field|net.minecraft.entity.Entity|world
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1778|1795|getTotalWorldTime|method|net.minecraft.world.World|getTotalWorldTime|()J
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1822|1836|GlStateManager|class|net.minecraft.client.renderer.GlStateManager|false
+      @|com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java|1837|1842|color|method|net.minecraft.client.renderer.GlStateManager|color|(FFF)V
    Method End: preRenderCallback(Lnet/minecraft/client/renderer/entity/RenderPlayer;Lnet/minecraft/client/entity/AbstractClientPlayer;F)V
-Class End  : com.Hileb.as_a_creeper_hileb.core.ExtraRenderPlayerStatic
-endProcessing "com/Hileb/as_a_creeper_hileb/core/ExtraRenderPlayerStatic.java"
+Class End  : com.Hileb.as_a_creeper_hileb.handler.ExtraRenderPlayerStatic
+endProcessing "com/Hileb/as_a_creeper_hileb/handler/ExtraRenderPlayerStatic.java"
 
 startProcessing "com/Hileb/as_a_creeper_hileb/item/ItemSkullBoom.java" md5: 86792a228fc409af2e3f9d972638851d
 @|com/Hileb/as_a_creeper_hileb/item/ItemSkullBoom.java|8|41|com.Hileb.as_a_creeper_hileb.item|package|com.Hileb.as_a_creeper_hileb.item|(file)
