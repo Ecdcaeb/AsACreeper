@@ -16,15 +16,19 @@ buildscript {
             mavenCentral()
             maven { url "https://maven.minecraftforge.net" }
         }
+
+        maven { url = "https://repo.spongepowered.org/maven" }
     }
     dependencies {
         classpath "net.minecraftforge.gradle:ForgeGradle:2.3.4"
+        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
     }
 }
 
 boolean useMirror = use_mirror_url == "true"
 if (useMirror) apply from: "mirror.gradle"
 apply plugin: "net.minecraftforge.gradle.forge"
+apply plugin: 'org.spongepowered.mixin'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 version = "1.0.0-1.12.2"
@@ -50,6 +54,7 @@ minecraft {
 }
 
 repositories {
+    maven { url = "https://repo.spongepowered.org/maven" }
     if (useMirror) {
         // remove minecraft and forge maven repositories to avoid interference
         removeIf {
@@ -126,4 +131,8 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         exclude "mcmod.info"
     }
+}
+mixin {
+    //换成你自己modid 其实这个refmap的名字其他地方也是可以改的
+    add sourceSets.main, "mixins.as_a_creeper_hileb.refmap.json"
 }
