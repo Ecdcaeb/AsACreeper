@@ -72,6 +72,7 @@ repositories {
 
 dependencies {
     compile files('libs/!mixinbooter-4.2.jar')
+    compile files('libs/creeperconfetti-1.4.1.jar')
     //Magic_Circle-1.0.1.jar
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..

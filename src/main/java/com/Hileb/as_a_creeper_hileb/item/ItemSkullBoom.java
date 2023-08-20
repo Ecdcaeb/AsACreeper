@@ -1,12 +1,16 @@
 package com.Hileb.as_a_creeper_hileb.item;
 
 import com.Hileb.as_a_creeper_hileb.AACHModMain;
+import com.Hileb.as_a_creeper_hileb.mods.proxy.AACHEvents;
+import com.Hileb.as_a_creeper_hileb.mods.proxy.BoomProxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.monster.EntityCreeper;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
@@ -18,6 +22,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -99,20 +104,40 @@ public class ItemSkullBoom extends Item {
             tag.setBoolean("hileb.isCharged",true);
         }
     }
+    public static BoomProxy BASE_PROXY=new BoomProxy() {
+        @Override
+        public boolean canHandler(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
+            return true;
+        }
+
+        @Override
+        public ItemStack run(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
+            if (!worldIn.isRemote){
+                boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(worldIn, entityLiving);
+                boolean isCharged=isCharged(stack);
+                int energy=isCharged?6:3;
+                worldIn.createExplosion(entityLiving, entityLiving.posX, entityLiving.posY, entityLiving.posZ, energy, flag);
+                if (!(entityLiving instanceof EntityPlayer && ((EntityPlayer)entityLiving).capabilities.isCreativeMode)){
+                    stack.shrink(1);
+                }
+            }
+            return stack;
+        }
+    };
 
     @Override
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityLivingBase entityLiving) {
-        if (!worldIn.isRemote){
-            boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(worldIn, entityLiving);
-            boolean isCharged=isCharged(stack);
-            int energy=isCharged?6:3;
-            worldIn.createExplosion(entityLiving, entityLiving.posX, entityLiving.posY, entityLiving.posZ, energy, flag);
-            if (!(entityLiving instanceof EntityPlayer && ((EntityPlayer)entityLiving).capabilities.isCreativeMode)){
-                stack.shrink(1);
+        AACHEvents.ProxyEvent event=new AACHEvents.ProxyEvent();
+        boolean flag=MinecraftForge.EVENT_BUS.post(event);
+        if (flag)return stack;
+        for(BoomProxy boomProxy:event.proxys){
+            if (boomProxy.canHandler(stack,worldIn,entityLiving)){
+                return boomProxy.run(stack,worldIn,entityLiving);
             }
         }
-        return stack;
+        return BASE_PROXY.run(stack,worldIn,entityLiving);
     }
+
     public static boolean isPlayerUsingItem(EntityPlayer player){
         if (player.isHandActive()){
             ItemStack stack=player.getActiveItemStack();
@@ -133,6 +158,7 @@ public class ItemSkullBoom extends Item {
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
         playerIn.setActiveHand(handIn);
+        playerIn.playSound(SoundEvents.ENTITY_CREEPER_PRIMED, 1.0F, 0.5F);
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
     }
 
@@ -177,6 +203,7 @@ public class ItemSkullBoom extends Item {
                         ItemStack stack=inv.getStackInSlot(i);
                         if (stack.getItem()==ITEM && !isCharged(stack)){
                             charge(stack);
+                            event.setAmount(0);
                         }
                     }
                 }
@@ -187,6 +214,7 @@ public class ItemSkullBoom extends Item {
                             ItemStack stack=ith.getStackInSlot(i);
                             if (stack.getItem()==ITEM && !isCharged(stack)){
                                 charge(stack);
+                                event.setAmount(0);
                             }
                         }
                     }
@@ -198,6 +226,7 @@ public class ItemSkullBoom extends Item {
                         ItemStack stack=inv.getStackInSlot(i);
                         if (stack.getItem()==ITEM && !isCharged(stack)){
                             charge(stack);
+                            event.setAmount(0);
                         }
                     }
                 }
